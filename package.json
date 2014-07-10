@@ -1,0 +1,19 @@
+{
+  "name": "font-scope",
+  "version": "0.0.0",
+  "description": "generate color debugging information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "font-scope": "index.js"
+  },
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "dependencies": {
+    "concat-stream": "~1.4.6",
+    "underscore": "~1.6.0",
+    "colors": "~0.6.2"
+  }
+}

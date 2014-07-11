@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+var rw = require('rw'),
+    leftpad = require('leftpad'),
+    argv = require('minimist')(process.argv.slice(2)),
+    fontScope = require('../');
+
+if (argv.help) {
+    console.log('--sort=none,score (default=score)');
+    return;
+}
+
+var faces = JSON.parse(rw.readFileSync('/dev/stdin'));
+faces.forEach(function(face) {
+    var ranges = fontScope.rangeCoverage(face.coverage);
+    console.log(face.face);
+    console.log('----------------');
+    var sorts = {
+        score: function(a, b) {
+            return b.score - a.score;
+        },
+        none: function(a, b) {
+            return 0;
+        }
+    };
+    if (!sorts[argv.sort]) argv.sort = 'score';
+    ranges.sort(sorts[argv.sort]).forEach(function(range) {
+        var score = range.score;
+        var grade = 'grey';
+        if (score > 0) grade = 'red';
+        if (score > 80) grade = 'green';
+        console.log((leftpad(score.toFixed(2) + '% ', 10, ' ') + range.name)[grade]);
+    });
+});

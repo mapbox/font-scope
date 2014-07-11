@@ -3,17 +3,8 @@
 var concat = require('concat-stream');
 var colors = require('colors');
 
-var input = process.stdin.pipe(concat(function(buf) {
-    var data = JSON.parse(buf);
-    data.forEach(function(face) {
-        console.log(face.face);
-        console.log('----------------');
-        rangeCoverage(face.coverage);
-    });
-}));
-
-function rangeCoverage(points) {
-    var ranges = require('./data/ranges.json');
+module.exports.rangeCoverage = function(points) {
+    var ranges = require(__dirname + '/data/ranges.json');
     ranges.forEach(function(r) {
         r.end = parseInt(r.end, 16);
         r.start = parseInt(r.start, 16);
@@ -28,11 +19,11 @@ function rangeCoverage(points) {
             }
         }
     }
-    ranges.forEach(function(r) {
+    return ranges.map(function(r) {
         var score = ((r.done / r.count) * 100);
-        var grade = 'grey';
-        if (score > 0) grade = 'red';
-        if (score > 80) grade = 'green';
-        console.log((r.name + ': ' + score.toFixed(2) + '%')[grade]);
+        return {
+            name: r.name,
+            score: score
+        };
     });
-}
+};

@@ -7,13 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "font-scope": "index.js"
+    "font-scope": "bin/font-scope"
   },
   "author": "Tom MacWright",
   "license": "ISC",
   "dependencies": {
-    "concat-stream": "~1.4.6",
     "underscore": "~1.6.0",
-    "colors": "~0.6.2"
+    "colors": "~0.6.2",
+    "rw": "~0.1.1",
+    "leftpad": "0.0.0",
+    "minimist": "~0.2.0"
   }
 }

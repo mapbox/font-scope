@@ -1,4 +1,4 @@
-var _ = require('lodash');
+var intersection = require('lodash.intersection');
 var languages = require('./language_codepoints.json');
 
 /**
@@ -24,7 +24,7 @@ var languages = require('./language_codepoints.json');
 module.exports = function(points) {
     return languages.map(function(language) {
         var exemplarCharacters = language.codepoints.exemplarCharacters;
-        var coveredCharacters = _.intersection(exemplarCharacters, points);
+        var coveredCharacters = intersection(exemplarCharacters, points);
         return {
             name: language.name,
             id: language.name,

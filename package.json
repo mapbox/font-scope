@@ -7,13 +7,10 @@
     "test": "tape test/test.js",
     "doc": "dox -r < index.js | doxme --readme > README.md"
   },
-  "bin": {
-    "font-scope": "bin/font-scope"
-  },
   "author": "Tom MacWright",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^3.1.0"
+    "lodash.intersection": "^3.0.0"
   },
   "devDependencies": {
     "dox": "^0.6.1",

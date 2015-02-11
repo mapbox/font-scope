@@ -1,29 +1,36 @@
-#!/usr/bin/env node
+var _ = require('lodash');
+var languages = require('./language_codepoints.json');
 
-var concat = require('concat-stream');
-var colors = require('colors');
-
-module.exports.rangeCoverage = function(points) {
-    var ranges = require(__dirname + '/data/ranges.json');
-    ranges.forEach(function(r) {
-        r.end = parseInt(r.end, 16);
-        r.start = parseInt(r.start, 16);
-        r.count = r.end - r.start;
-        r.done = 0;
-    });
-    for (var i = 0; i < points.length; i++) {
-        for (var r = 0; r < ranges.length; r++) {
-            if (points[i] >= ranges[r].start && points[i] < ranges[r].end) {
-                ranges[r].done++;
-                break;
-            }
-        }
-    }
-    return ranges.map(function(r) {
-        var score = ((r.done / r.count) * 100);
+/**
+ * Analyze a font's coverage across languages
+ *
+ * Analysis results include:
+ *
+ * ```js
+ * {
+ *   name: 'English font name'
+ *   id: 'Unicode font code'
+ *   ratio: // percentage coverage as number from 0 to 1
+ *   count: // codepoints in this font for this language
+ *   total: // codepoints in this language
+ * }
+ * ```
+ *
+ * @alias fontScope
+ * @param {Array} points an array of codepoints covered by a given font,
+ * as an array of integers
+ * @returns {Object} analysis
+ */
+module.exports = function(points) {
+    return languages.map(function(language) {
+        var exemplarCharacters = language.codepoints.exemplarCharacters;
+        var coveredCharacters = _.intersection(exemplarCharacters, points);
         return {
-            name: r.name,
-            score: score
+            name: language.name,
+            id: language.name,
+            ratio: coveredCharacters.length  / exemplarCharacters.length,
+            count: coveredCharacters.length,
+            total: exemplarCharacters.length
         };
     });
 };

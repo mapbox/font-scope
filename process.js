@@ -10,12 +10,13 @@ var fs = require('fs'),
 var languages = [];
 var langNamesData = JSON.parse(fs.readFileSync('unicode-data/main/en/languages.json'));
 
-var ignoreLanguages = ['root', 'en-001', 'en-AU', 'en-CA', 'en-GB', 'en-HK', 'en-IN'];
+var ignoreLanguages = ['root', 'en-001', 'en-AU', 'en-CA', 'en-GB', 'en-HK', 'en-IN', 'pt-PT'];
 
 glob.sync('unicode-data/main/*/characters.json').map(function(f) {
     var data = JSON.parse(fs.readFileSync(f));
     var languageCode = Object.keys(data.main)[0];
 
+    console.log(languageCode);
     // ignore the root folder, which is not a language folder:
     if (ignoreLanguages.indexOf(languageCode) != -1) { return; }
 

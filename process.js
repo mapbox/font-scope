@@ -16,7 +16,6 @@ glob.sync('unicode-data/main/*/characters.json').map(function(f) {
     var data = JSON.parse(fs.readFileSync(f));
     var languageCode = Object.keys(data.main)[0];
 
-    console.log(languageCode);
     // ignore the root folder, which is not a language folder:
     if (ignoreLanguages.indexOf(languageCode) != -1) { return; }
 
@@ -28,7 +27,7 @@ glob.sync('unicode-data/main/*/characters.json').map(function(f) {
     var codePointGroup = function(x) {
         // remove '[' and ']' from character lists:
         var charList = data.main[languageCode].characters[charType[x]].slice(1, -1);
-        // remove '//' for now: 
+        // remove '//' for now:
         if (charType[x] == 'punctuation') {
             charList = charList.replace(/(\\+)/g, function(m, a) {
                 if (a.length === 2) {
@@ -42,7 +41,7 @@ glob.sync('unicode-data/main/*/characters.json').map(function(f) {
         var characters = charList.split(' ');
         var codePoints = characters.map(function(x) {
             return x.charCodeAt(0);
-        });	
+        });
         return codePoints;
     };
 
@@ -54,9 +53,9 @@ glob.sync('unicode-data/main/*/characters.json').map(function(f) {
     // Add all the lang objects as keys to the top-level object:
     languages.push({
         id: languageCode,
-        name: langNamesData.main.en.localeDisplayNames.languages[languageCode],
+        name: langNamesData.main.en.localeDisplayNames.languages[languageCode].replace('Norwegian', '').trim(),
         codepoints: allCodePoints
-    }); 
+    });
 });
 
 fs.writeFileSync('language_codepoints.json', JSON.stringify(languages));

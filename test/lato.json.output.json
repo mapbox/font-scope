@@ -1,233 +1,266 @@
 [
   {
     "name": "Arabic",
-    "id": "Arabic",
-    "ratio": 0,
+    "total": 45,
     "count": 0,
-    "total": 45
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Catalan",
-    "id": "Catalan",
-    "ratio": 1,
+    "total": 37,
     "count": 37,
-    "total": 37
+    "coverages": [
+      37
+    ]
   },
   {
     "name": "Czech",
-    "id": "Czech",
-    "ratio": 0.8333333333333334,
+    "total": 42,
     "count": 35,
-    "total": 42
+    "coverages": [
+      35
+    ]
   },
   {
     "name": "Danish",
-    "id": "Danish",
-    "ratio": 1,
+    "total": 29,
     "count": 29,
-    "total": 29
+    "coverages": [
+      29
+    ]
   },
   {
     "name": "German",
-    "id": "German",
-    "ratio": 1,
+    "total": 30,
     "count": 30,
-    "total": 30
+    "coverages": [
+      30
+    ]
   },
   {
     "name": "Greek",
-    "id": "Greek",
-    "ratio": 0.027777777777777776,
+    "total": 36,
     "count": 1,
-    "total": 36
+    "coverages": [
+      1
+    ]
   },
   {
     "name": "English",
-    "id": "English",
-    "ratio": 1,
+    "total": 26,
     "count": 26,
-    "total": 26
+    "coverages": [
+      26
+    ]
   },
   {
     "name": "Spanish",
-    "id": "Spanish",
-    "ratio": 1,
+    "total": 33,
     "count": 33,
-    "total": 33
+    "coverages": [
+      33
+    ]
   },
   {
     "name": "Finnish",
-    "id": "Finnish",
-    "ratio": 1,
+    "total": 31,
     "count": 31,
-    "total": 31
+    "coverages": [
+      31
+    ]
   },
   {
     "name": "French",
-    "id": "French",
-    "ratio": 1,
+    "total": 42,
     "count": 42,
-    "total": 42
+    "coverages": [
+      42
+    ]
   },
   {
     "name": "Hebrew",
-    "id": "Hebrew",
-    "ratio": 0,
+    "total": 27,
     "count": 0,
-    "total": 27
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Hindi",
-    "id": "Hindi",
-    "ratio": 0,
+    "total": 68,
     "count": 0,
-    "total": 68
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Croatian",
-    "id": "Croatian",
-    "ratio": 0.8666666666666667,
-    "count": 26,
-    "total": 30
+    "total": 30,
+    "count": 28,
+    "coverages": [
+      28
+    ]
   },
   {
     "name": "Hungarian",
-    "id": "Hungarian",
-    "ratio": 0.6122448979591837,
-    "count": 30,
-    "total": 49
+    "total": 49,
+    "count": 47,
+    "coverages": [
+      47
+    ]
   },
   {
     "name": "Italian",
-    "id": "Italian",
-    "ratio": 1,
+    "total": 33,
     "count": 33,
-    "total": 33
+    "coverages": [
+      33
+    ]
   },
   {
     "name": "Japanese",
-    "id": "Japanese",
-    "ratio": 0,
+    "total": 1946,
     "count": 0,
-    "total": 1946
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Korean",
-    "id": "Korean",
-    "ratio": 0,
+    "total": 1,
     "count": 0,
-    "total": 1
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Bokmål",
-    "id": "Bokmål",
-    "ratio": 1,
+    "total": 34,
     "count": 34,
-    "total": 34
+    "coverages": [
+      34
+    ]
   },
   {
     "name": "Dutch",
-    "id": "Dutch",
-    "ratio": 0.9736842105263158,
-    "count": 37,
-    "total": 38
+    "total": 38,
+    "count": 38,
+    "coverages": [
+      38
+    ]
   },
   {
     "name": "Polish",
-    "id": "Polish",
-    "ratio": 1,
+    "total": 32,
     "count": 32,
-    "total": 32
+    "coverages": [
+      32
+    ]
   },
   {
     "name": "Portuguese",
-    "id": "Portuguese",
-    "ratio": 1,
+    "total": 39,
     "count": 39,
-    "total": 39
+    "coverages": [
+      39
+    ]
   },
   {
     "name": "Romanian",
-    "id": "Romanian",
-    "ratio": 0.8928571428571429,
+    "total": 28,
     "count": 25,
-    "total": 28
+    "coverages": [
+      25
+    ]
   },
   {
     "name": "Russian",
-    "id": "Russian",
-    "ratio": 0,
+    "total": 33,
     "count": 0,
-    "total": 33
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Slovak",
-    "id": "Slovak",
-    "ratio": 0.8409090909090909,
+    "total": 44,
     "count": 37,
-    "total": 44
+    "coverages": [
+      37
+    ]
   },
   {
     "name": "Slovenian",
-    "id": "Slovenian",
-    "ratio": 0.96,
+    "total": 25,
     "count": 24,
-    "total": 25
+    "coverages": [
+      24
+    ]
   },
   {
     "name": "Serbian",
-    "id": "Serbian",
-    "ratio": 0,
+    "total": 30,
     "count": 0,
-    "total": 30
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Swedish",
-    "id": "Swedish",
-    "ratio": 1,
+    "total": 31,
     "count": 31,
-    "total": 31
+    "coverages": [
+      31
+    ]
   },
   {
     "name": "Thai",
-    "id": "Thai",
-    "ratio": 0,
+    "total": 73,
     "count": 0,
-    "total": 73
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Turkish",
-    "id": "Turkish",
-    "ratio": 0.9,
+    "total": 30,
     "count": 27,
-    "total": 30
+    "coverages": [
+      27
+    ]
   },
   {
     "name": "Ukrainian",
-    "id": "Ukrainian",
-    "ratio": 0,
+    "total": 34,
     "count": 0,
-    "total": 34
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Vietnamese",
-    "id": "Vietnamese",
-    "ratio": 0.45161290322580644,
+    "total": 93,
     "count": 42,
-    "total": 93
+    "coverages": [
+      42
+    ]
   },
   {
     "name": "Traditional Chinese",
-    "id": "Traditional Chinese",
-    "ratio": 0,
+    "total": 2027,
     "count": 0,
-    "total": 2027
+    "coverages": [
+      0
+    ]
   },
   {
     "name": "Chinese",
-    "id": "Chinese",
-    "ratio": 0,
+    "total": 1968,
     "count": 0,
-    "total": 1968
+    "coverages": [
+      0
+    ]
   }
 ]

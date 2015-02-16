@@ -1,4 +1,4 @@
-var intersection = require('lodash.intersection');
+var difference = require('lodash.difference');
 var languages = require('./language_codepoints.json');
 
 /**
@@ -21,16 +21,23 @@ var languages = require('./language_codepoints.json');
  * as an array of integers
  * @returns {Object} analysis
  */
-module.exports = function(points) {
+module.exports = function(points_array) {
     return languages.map(function(language) {
-        var exemplarCharacters = language.codepoints.exemplarCharacters;
-        var coveredCharacters = intersection(exemplarCharacters, points);
+        var exemplarCharacters = language.codepoints.exemplarCharacters,
+            charactersLeft = exemplarCharacters,
+
+        coverages = points_array.map(function(points) {
+            var nextValue = difference(charactersLeft, points),
+                covered = charactersLeft.length - nextValue.length;
+            charactersLeft = nextValue;
+            return covered;
+        });
+
         return {
             name: language.name,
-            id: language.name,
-            ratio: coveredCharacters.length  / exemplarCharacters.length,
-            count: coveredCharacters.length,
-            total: exemplarCharacters.length
+            total: exemplarCharacters.length,
+            count: coverages.reduce(function(sum, v) { return sum + v; }, 0),
+            coverages: coverages
         };
     });
 };

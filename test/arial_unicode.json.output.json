@@ -1,6 +1,7 @@
 [
   {
     "name": "Arabic",
+    "id": "ar",
     "total": 45,
     "count": 45,
     "coverages": [
@@ -9,6 +10,7 @@
   },
   {
     "name": "Catalan",
+    "id": "ca",
     "total": 37,
     "count": 37,
     "coverages": [
@@ -17,6 +19,7 @@
   },
   {
     "name": "Czech",
+    "id": "cs",
     "total": 42,
     "count": 42,
     "coverages": [
@@ -25,6 +28,7 @@
   },
   {
     "name": "Danish",
+    "id": "da",
     "total": 29,
     "count": 29,
     "coverages": [
@@ -33,6 +37,7 @@
   },
   {
     "name": "German",
+    "id": "de",
     "total": 30,
     "count": 30,
     "coverages": [
@@ -41,6 +46,7 @@
   },
   {
     "name": "Greek",
+    "id": "el",
     "total": 36,
     "count": 36,
     "coverages": [
@@ -49,6 +55,7 @@
   },
   {
     "name": "English",
+    "id": "en",
     "total": 26,
     "count": 26,
     "coverages": [
@@ -57,6 +64,7 @@
   },
   {
     "name": "Spanish",
+    "id": "es",
     "total": 33,
     "count": 33,
     "coverages": [
@@ -65,6 +73,7 @@
   },
   {
     "name": "Finnish",
+    "id": "fi",
     "total": 31,
     "count": 31,
     "coverages": [
@@ -73,6 +82,7 @@
   },
   {
     "name": "French",
+    "id": "fr",
     "total": 42,
     "count": 42,
     "coverages": [
@@ -81,6 +91,7 @@
   },
   {
     "name": "Hebrew",
+    "id": "he",
     "total": 27,
     "count": 27,
     "coverages": [
@@ -89,6 +100,7 @@
   },
   {
     "name": "Hindi",
+    "id": "hi",
     "total": 68,
     "count": 68,
     "coverages": [
@@ -97,6 +109,7 @@
   },
   {
     "name": "Croatian",
+    "id": "hr",
     "total": 30,
     "count": 30,
     "coverages": [
@@ -105,6 +118,7 @@
   },
   {
     "name": "Hungarian",
+    "id": "hu",
     "total": 49,
     "count": 49,
     "coverages": [
@@ -113,6 +127,7 @@
   },
   {
     "name": "Italian",
+    "id": "it",
     "total": 33,
     "count": 33,
     "coverages": [
@@ -121,6 +136,7 @@
   },
   {
     "name": "Japanese",
+    "id": "ja",
     "total": 1946,
     "count": 1946,
     "coverages": [
@@ -129,6 +145,7 @@
   },
   {
     "name": "Korean",
+    "id": "ko",
     "total": 1,
     "count": 1,
     "coverages": [
@@ -137,6 +154,7 @@
   },
   {
     "name": "Bokmål",
+    "id": "nb",
     "total": 34,
     "count": 34,
     "coverages": [
@@ -145,6 +163,7 @@
   },
   {
     "name": "Dutch",
+    "id": "nl",
     "total": 38,
     "count": 38,
     "coverages": [
@@ -153,6 +172,7 @@
   },
   {
     "name": "Polish",
+    "id": "pl",
     "total": 32,
     "count": 32,
     "coverages": [
@@ -161,6 +181,7 @@
   },
   {
     "name": "Portuguese",
+    "id": "pt",
     "total": 39,
     "count": 39,
     "coverages": [
@@ -169,6 +190,7 @@
   },
   {
     "name": "Romanian",
+    "id": "ro",
     "total": 28,
     "count": 28,
     "coverages": [
@@ -177,6 +199,7 @@
   },
   {
     "name": "Russian",
+    "id": "ru",
     "total": 33,
     "count": 33,
     "coverages": [
@@ -185,6 +208,7 @@
   },
   {
     "name": "Slovak",
+    "id": "sk",
     "total": 44,
     "count": 44,
     "coverages": [
@@ -193,6 +217,7 @@
   },
   {
     "name": "Slovenian",
+    "id": "sl",
     "total": 25,
     "count": 25,
     "coverages": [
@@ -201,6 +226,7 @@
   },
   {
     "name": "Serbian",
+    "id": "sr",
     "total": 30,
     "count": 30,
     "coverages": [
@@ -209,6 +235,7 @@
   },
   {
     "name": "Swedish",
+    "id": "sv",
     "total": 31,
     "count": 31,
     "coverages": [
@@ -217,6 +244,7 @@
   },
   {
     "name": "Thai",
+    "id": "th",
     "total": 73,
     "count": 73,
     "coverages": [
@@ -225,6 +253,7 @@
   },
   {
     "name": "Turkish",
+    "id": "tr",
     "total": 30,
     "count": 30,
     "coverages": [
@@ -233,6 +262,7 @@
   },
   {
     "name": "Ukrainian",
+    "id": "uk",
     "total": 34,
     "count": 34,
     "coverages": [
@@ -241,6 +271,7 @@
   },
   {
     "name": "Vietnamese",
+    "id": "vi",
     "total": 93,
     "count": 93,
     "coverages": [
@@ -249,6 +280,7 @@
   },
   {
     "name": "Traditional Chinese",
+    "id": "zh-Hant",
     "total": 2027,
     "count": 2027,
     "coverages": [
@@ -257,6 +289,7 @@
   },
   {
     "name": "Chinese",
+    "id": "zh",
     "total": 1968,
     "count": 1968,
     "coverages": [

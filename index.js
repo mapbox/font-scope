@@ -10,15 +10,15 @@ var languages = require('./language_codepoints.json');
  * {
  *   name: 'English font name'
  *   id: 'Unicode font code'
- *   ratio: // percentage coverage as number from 0 to 1
+ *   coverages: // array of how many codepoints are covered by each language
  *   count: // codepoints in this font for this language
  *   total: // codepoints in this language
  * }
  * ```
  *
  * @alias fontScope
- * @param {Array} points an array of codepoints covered by a given font,
- * as an array of integers
+ * @param {Array<Array>} points an array of arrays of codepoints, corresponding
+ * to the coverage of multiple fonts.
  * @returns {Object} analysis
  */
 module.exports = function(points_array) {
@@ -35,6 +35,7 @@ module.exports = function(points_array) {
 
         return {
             name: language.name,
+            id: language.id,
             total: exemplarCharacters.length,
             count: coverages.reduce(function(sum, v) { return sum + v; }, 0),
             coverages: coverages

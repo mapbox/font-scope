@@ -15,7 +15,7 @@ Analysis results include:
 {
   name: 'English font name'
   id: 'Unicode font code'
-  ratio: // percentage coverage as number from 0 to 1
+  coverages: // array of how many codepoints are covered by each language
   count: // codepoints in this font for this language
   total: // codepoints in this language
 }
@@ -24,9 +24,9 @@ Analysis results include:
 
 ### Parameters
 
-| parameter | type  | description                                                             |
-| --------- | ----- | ----------------------------------------------------------------------- |
-| `points`  | Array | an array of codepoints covered by a given font, as an array of integers |
+| parameter | type          | description                                                                        |
+| --------- | ------------- | ---------------------------------------------------------------------------------- |
+| `points`  | Array.<Array> | an array of arrays of codepoints, corresponding to the coverage of multiple fonts. |
 
 
 

@@ -1,6 +1,6 @@
 # font-scope
 
-[![build status](https://secure.travis-ci.org/mapbox/font-scope.png)](http://travis-ci.org/mapbox/font-scope)
+[![Build Status](https://travis-ci.org/mapbox/font-scope.svg?branch=master)](https://travis-ci.org/mapbox/font-scope)
 
 generate font debugging information
 

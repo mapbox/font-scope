@@ -37,7 +37,7 @@ Analysis results include:
 Requires [nodejs](http://nodejs.org/).
 
 ```sh
-$ npm install font-scope
+$ npm install @mapbox/font-scope
 ```
 
 ## Tests
@@ -45,5 +45,3 @@ $ npm install font-scope
 ```sh
 $ npm test
 ```
-
-
